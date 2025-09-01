@@ -4,21 +4,19 @@ Welcome to your personal trading journal! This site is built with Jekyll for Git
 
 # Trading Blog
 
-This is a personal trading journal and blog built with Jekyll.
+Welcome to your trading journal! Track your trades, performance, and favorite resources all in one place.
 
-## Getting Started
+## Navigation
 
-1. Clone the repository
-2. Install dependencies (if any)
-3. Run locally with Jekyll
+- [Journal](/trading-blog/journal)
+- [Performance](/trading-blog/performance)
+- [Resources](/trading-blog/resources)
+- [Contact](/trading-blog/contact)
+- [Bi-Weekly Journals](/trading-blog/biweekly.html)
 
-## GitHub Pages Deployment
+## Live Site
 
-This site is deployed using GitHub Pages.
-
-### Live Site URL
-
-Once deployed, access your site at:
+Access your site at:
 
 ```
 https://jm-the-trader.github.io/trading-blog/
