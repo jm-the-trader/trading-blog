@@ -1,0 +1,16 @@
+---
+layout: default
+title: Bi-Weekly Journals
+---
+
+<div class="container">
+  <h1>Bi-Weekly Journals</h1>
+  <ul>
+    {% for entry in site.biweekly reversed %}
+      <li>
+        <a href="{{ entry.url | relative_url }}">{{ entry.title }}</a>
+        <span style="color:#888; font-size:0.95em;">({{ entry.date | date: "%B %d, %Y" }})</span>
+      </li>
+    {% endfor %}
+  </ul>
+</div>

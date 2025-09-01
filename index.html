@@ -1,0 +1,39 @@
+---
+layout: default
+title: Trading Blog
+---
+
+<link rel="stylesheet" href="/trading-blog/css/apple.css">
+<div class="container">
+  <header>
+    <h1>Trading Blog</h1>
+    <nav>
+      <a href="/trading-blog/">Home</a> |
+      <a href="/trading-blog/biweekly.html">Bi-Weekly Journals</a> |
+      <a href="/trading-blog/journal">Journal</a> |
+      <a href="/trading-blog/performance">Performance</a>
+    </nav>
+  </header>
+  <main>
+    <h2>Recent Posts</h2>
+    <ul>
+      {% for post in paginator.posts %}
+        <li>
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+          <span style="color:#888; font-size:0.95em;">({{ post.date | date: "%B %d, %Y" }})</span>
+        </li>
+      {% endfor %}
+    </ul>
+    <div class="pagination">
+      {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path | relative_url }}">&laquo; Previous</a>
+      {% endif %}
+      {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path | relative_url }}">Next &raquo;</a>
+      {% endif %}
+    </div>
+  </main>
+  <footer>
+    <p>&copy; {{ site.time | date: "%Y" }} jm-the-trader</p>
+  </footer>
+</div>

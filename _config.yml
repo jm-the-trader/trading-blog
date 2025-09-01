@@ -12,6 +12,12 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
+# Collections
+collections:
+  biweekly:
+    output: true
+    permalink: /biweekly/:name/
+
 # Build settings
 markdown: kramdown
 
