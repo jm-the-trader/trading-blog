@@ -1,0 +1,16 @@
+# Site settings
+# For more options see https://jekyllrb.com/docs/configuration/
+title: Trading Journal
+description: >
+  A personal journal for tracking stock trades, performance, and resources.
+author: Your Name
+email: your@email.com
+baseurl: ""
+url: "https://jm-the-trader.github.io/trading-blog"
+theme: jekyll-theme-minimal
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Build settings
+markdown: kramdown
