@@ -14,3 +14,7 @@ plugins:
 
 # Build settings
 markdown: kramdown
+
+baseurl: "/trading-blog"
+url: "https://jm-the-trader.github.io"
+description: >
